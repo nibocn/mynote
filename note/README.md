@@ -1,5 +1,9 @@
 # note
 
+## [java](java)
+* [thinking in java](java/thinking-in-java)
+    * [第1章 对象导论](java/thinking-in-java/第1章-对象导论.md)
+
 ## [maven](maven)
 * [maven笔记](maven/maven笔记.md)
 
