@@ -4,6 +4,10 @@
 * [thinking in java](java/thinking-in-java)
     * [第1章 对象导论](java/thinking-in-java/第1章-对象导论.md)
 
+## [python](python)
+* [python教程](python/python教程)
+    * [高级特性](python/python教程/高级特性.md)
+
 ## [maven](maven)
 * [maven笔记](maven/maven笔记.md)
 
