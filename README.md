@@ -8,3 +8,4 @@
 * [maven](note/maven)
 * [git](note/git)
 * [cygwin](note/cygwin)
+* [sublime](note/sublime)

@@ -27,3 +27,7 @@
 ## [cygwin](cygwin)
 
 * [cygwin-git私钥访问权限问题0755](cygwin/cygwin-git私钥访问权限问题0755.md)
+
+## [sublime](sublime)
+
+* [sublime快捷键](sublime/sublime快捷键.md)
