@@ -10,6 +10,10 @@
 * [python教程](python/python教程)
     * [高级特性](python/python教程/高级特性.md)
 
+## [mysql](mysql)
+
+* [remote access mysql](mysql/remote-access-mysql.md)
+
 ## [maven](maven)
 
 * [maven笔记](maven/maven笔记.md)
