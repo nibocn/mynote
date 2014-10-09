@@ -35,3 +35,7 @@
 ## [sublime](sublime)
 
 * [sublime快捷键](sublime/sublime快捷键.md)
+
+## [idea](idea)
+
+* [idea常用操作设置（不定时更新）](idea/idea常用操作设置.md)

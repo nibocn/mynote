@@ -10,3 +10,4 @@
 * [git](note/git)
 * [cygwin](note/cygwin)
 * [sublime](note/sublime)
+* [idea](note/idea)
