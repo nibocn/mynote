@@ -14,6 +14,10 @@
 
 * [remote access mysql](mysql/remote-access-mysql.md)
 
+## [mongodb](mongodb)
+
+* [mongodb基本配置](mongodb/mongodb基本配置.md)
+
 ## [maven](maven)
 
 * [maven笔记](maven/maven笔记.md)
