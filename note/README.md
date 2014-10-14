@@ -21,6 +21,7 @@
 ## [maven](maven)
 
 * [maven笔记](maven/maven笔记.md)
+* [创建自定义maven项目模板](maven/创建自定义maven项目模板.md)
 
 ## [git](git)
 
