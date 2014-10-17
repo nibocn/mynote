@@ -11,3 +11,4 @@
 * [cygwin](note/cygwin)
 * [sublime](note/sublime)
 * [idea](note/idea)
+* [linux](note/linux)

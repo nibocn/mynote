@@ -40,3 +40,8 @@
 ## [idea](idea)
 
 * [idea常用操作设置（不定时更新）](idea/idea常用操作设置.md)
+
+## [linux](linux)
+
+* [centos](linux/centos)
+    * [centos-mysql配置步骤](linux/centos/centos-mysql配置步骤.md)
