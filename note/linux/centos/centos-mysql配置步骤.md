@@ -1,4 +1,4 @@
-# centos配置步骤
+# centos-mysql配置步骤
 
 ## 常用命令
 
