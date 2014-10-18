@@ -112,16 +112,19 @@ Enter password:
 k:zWHSeFJF0s
 [root@centos-6 ~]#
 ```
+
 * 修改密码
-第一次登录后都要求修改密码才能继续进行其它操作，具体命令：
-```
-mysql> SET PASSWORD = PASSWORD('BP&FFhGK!107ou');
-```
+
+    第一次登录后都要求修改密码才能继续进行其它操作，具体命令：
+    ```
+    mysql> SET PASSWORD = PASSWORD('BP&FFhGK!107ou');
+    ```
 *注：*从MySQL5.6.6增加了密码强度验证插件validate_password，故密码的验证较严格太简单的密码
 不会允许通过。
 
 * 远程访问mysql
-通过远程访问mysql时可能出现不能访问的情况：
+
+    通过远程访问mysql时可能出现不能访问的情况：
 
     * 修改默认数据库`mysql`的`user`用户表信息：
     ```
