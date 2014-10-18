@@ -32,8 +32,10 @@ mysql-libs-5.1.73-3.el6_5.x86_64
 ```
 [root@centos-6 mysql-5.7.5]# yum -y remove mysql-libs-5.1.73-3.el6_5.x86_64
 ```
+
 * 通过mysql官网下载相关包，URL：
 http://dev.mysql.com/get/Downloads/MySQL-5.7/MySQL-5.7.5-m15-0.6.m15.el6.x86_64.rpm-bundle.tar
+
 * 解压下载的包，执行命令`rpm -ivh mysql-community-server-5.7.5-0.6.m15.el6.x86_64.rpm`，如果出现
 错误，则是缺少依赖，需要先安装相关依赖，如：
 ```
@@ -51,6 +53,7 @@ error: Failed dependencies:
     perl(strict) is needed by mysql-community-server-5.7.5-0.6.m15.el6.x86_64
 [root@centos-6 mysql-5.7.5]#
 ```
+
 * 安装相关依赖库：
 ```
 [root@centos-6 mysql-5.7.5]# yum install libaio
@@ -70,6 +73,7 @@ Preparing...                ########################################### [100%]
 [root@centos-6 mysql-5.7.5]# yum install perl
 [root@centos-6 mysql-5.7.5]#
 ```
+
 * 再次执行`rpm -ivh mysql-community-server-5.7.5-0.6.m15.el6.x86_64.rpm`安装mysql server：
 ```
 [root@centos-6 mysql-5.7.5]# rpm -ivh mysql-community-server-5.7.5-0.6.m15.el6.x86_64.rpm
@@ -77,6 +81,7 @@ Preparing...                ########################################### [100%]
    1:mysql-community-server ########################################### [100%]
 [root@centos-6 mysql-5.7.5]#
 ```
+
 * 启动服务`service mysqld start`：
 ```
 [root@centos-6 mysql-5.7.5]# service mysqld start
@@ -85,6 +90,7 @@ Preparing...                ########################################### [100%]
 Securing the MySQL server deployment.
 .............
 ```
+
 * 通过进程查看mysql是否成功启动`ps -ef|grep mysql`：
 ```
 [root@centos-6 mysql-5.7.5]# ps -ef|grep mysql
@@ -93,6 +99,7 @@ mysql    10686 10478  0 21:49 pts/1    00:00:00 /usr/sbin/mysqld --basedir=/usr 
 root     10733  1116  0 21:51 pts/1    00:00:00 grep mysql
 [root@centos-6 mysql-5.7.5]#
 ```
+
 * 登录mysql：
 ```
 [root@centos-6 ~]# mysql -u root -p
@@ -112,9 +119,9 @@ mysql> SET PASSWORD = PASSWORD('BP&FFhGK!107ou');
 ```
 *注：*从MySQL5.6.6增加了密码强度验证插件validate_password，故密码的验证较严格太简单的密码
 不会允许通过。
-* 远程访问mysql
 
-    通过远程访问mysql时可能出现不能访问的情况：
+* 远程访问mysql
+通过远程访问mysql时可能出现不能访问的情况：
 
     * 修改默认数据库`mysql`的`user`用户表信息：
     ```
@@ -127,6 +134,7 @@ mysql> SET PASSWORD = PASSWORD('BP&FFhGK!107ou');
     Rows matched: 1  Changed: 0  Warnings: 0
     mysql>
     ```
+
     * 查看防火墙配置是否允许访问`3306`端口：
     ```
     [root@centos-6 ~]# cat /etc/sysconfig/iptables
@@ -145,15 +153,11 @@ mysql> SET PASSWORD = PASSWORD('BP&FFhGK!107ou');
     COMMIT
     [root@centos-6 ~]#
     ```
+
     象上面的信息防火墙就只开了`22`端口，所以需要添加打开`3306`端口的信息，修改文件
     `/etc/sysconfig/iptables`，添加如下信息：
     ```
     -A INPUT -m state --state NEW -m tcp -p tcp --dport 3306 -j ACCEPT
     ```
+
     **最后重启防火墙`service iptables restart`**
-
-
-
-
-
-
