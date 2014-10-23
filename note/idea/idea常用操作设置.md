@@ -15,3 +15,4 @@
     ![](http://img.hb.aicdn.com/dc8bcf90dcc1f309986b9d9a4ccb37fde8f2f7869f4f-tMyaUZ)
     * **具体设置：**
     ![](http://img.hb.aicdn.com/7a44c39165fc367dd5a4af42c2790ab5f7340b4317482-DZ32J3)
+* 设置控制台(console)输出更多数据，默认为1024kb，当输出的信息超过此大小会移除最老的数据。可通过配置文件`E:\Software\JetBrains\IntelliJ IDEA 13.1.4\bin\idea.properties`(即idea的安装路径`bin`目录下的`idea.properties`文件)，参数`idea.cycle.buffer.size`进行调整，**重启idea生效**。
