@@ -14,8 +14,7 @@ logappend=true
 
 ## 创建windows服务
 
-以`系统管理员身份`执行命令行，输入命令：
-`mongod --config "E:\Software\mongodb\mongodb.cfg" --install`
+以`系统管理员身份`执行命令行，输入命令：`mongod --config "E:\Software\mongodb\mongodb.cfg" --install`
 
 **注：mongod安装时安装路径最好不要存在空格，以免造成windows服务无法启动！**
 
