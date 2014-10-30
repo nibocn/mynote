@@ -1,5 +1,3 @@
 # python
 
-## [python教程](python教程)
-
-* [高级特性](python教程/高级特性.md)
+* [廖雪峰的python教程学习笔记](廖雪峰的python教程学习笔记.md)

@@ -7,8 +7,7 @@
 
 ## [python](python)
 
-* [python教程](python/python教程)
-    * [高级特性](python/python教程/高级特性.md)
+* [廖雪峰的python教程学习笔记](python/廖雪峰的python教程学习笔记.md)
 
 ## [mysql](mysql)
 
