@@ -45,3 +45,5 @@
 * [centos](linux/centos)
     * [centos-mysql配置步骤](linux/centos/centos-mysql配置步骤.md)
     * [LifeKeeper双机软件自启动tomcat问题](linux/centos/LifeKeeper双机软件自启动tomcat问题.md)
+* [ubuntu](linux/ubuntu)
+    * [ubuntu添加字体](linux/ubuntu/ubuntu添加字体.md)
