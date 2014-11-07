@@ -12,3 +12,4 @@
 * [sublime](note/sublime)
 * [idea](note/idea)
 * [linux](note/linux)
+* [书摘](note/书摘)

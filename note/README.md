@@ -45,3 +45,8 @@
 * [centos](linux/centos)
     * [centos-mysql配置步骤](linux/centos/centos-mysql配置步骤.md)
     * [LifeKeeper双机软件自启动tomcat问题](linux/centos/LifeKeeper双机软件自启动tomcat问题.md)
+* [Linux配置jdk环境变量](linux/Linux配置jdk环境变量.md)
+
+## [书摘](书摘)
+
+* [软件开发者路线图-从学徒到高手](书摘/软件开发者路线图-从学徒到高手.md)
