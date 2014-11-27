@@ -14,6 +14,7 @@
 ## [mysql](mysql)
 
 * [remote access mysql](mysql/remote-access-mysql.md)
+* [mysql数据库备份及恢复](mysql/mysql数据库备份及恢复.md)
 
 ## [mongodb](mongodb)
 
@@ -53,3 +54,4 @@
 ## [书摘](书摘)
 
 * [软件开发者路线图-从学徒到高手](书摘/软件开发者路线图-从学徒到高手.md)
+* [Don't Make Me Think](书摘/Don't Make Me Think.md)
