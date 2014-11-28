@@ -13,4 +13,5 @@
 * [idea](note/idea)
 * [linux](note/linux)
 * [less](note/less)
+* [android](note/android)
 * [书摘](note/书摘)
