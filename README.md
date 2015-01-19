@@ -15,3 +15,5 @@
 * [less](note/less)
 * [android](note/android)
 * [书摘](note/书摘)
+* [gradle](note/gradle)
+* [markdown](note/markdown)
