@@ -17,3 +17,4 @@
 * [书摘](note/书摘)
 * [gradle](note/gradle)
 * [markdown](note/markdown)
+* [uml](note/uml)
