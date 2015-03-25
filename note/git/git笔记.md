@@ -25,3 +25,9 @@ git diff --staged               # 比较暂存区和本地版本库差异
 git diff --cached               # 比较暂存区和本地版本库差异
 git diff --stat                 # 仅仅比较统计信息
 ```
+
+```
+git cherry-pick <$id>           # 合并指定提交到当前分支
+git cherry-pick -n <$id>        # 合并指定提交到当前分支，但是不直接提交，只先添加到缓冲区
+# 上面两个命令挺有用的
+```
