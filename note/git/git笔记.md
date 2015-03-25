@@ -30,4 +30,6 @@ git diff --stat                 # 仅仅比较统计信息
 git cherry-pick <$id>           # 合并指定提交到当前分支
 git cherry-pick -n <$id>        # 合并指定提交到当前分支，但是不直接提交，只先添加到缓冲区
 # 上面两个命令挺有用的
+
+git count-objects -v            # 查看使用了多少空间，size-pack 是以千字节为单位表示的 packfiles 的大小
 ```
