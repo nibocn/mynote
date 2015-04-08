@@ -1,6 +1,4 @@
-# 笔记记录
-
-## [note](note)
+# [note](note)
 
 * [java](note/java)
 * [python](note/python)
