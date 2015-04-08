@@ -5,6 +5,7 @@
     * [第2章 一切都是对象](java/thinking-in-java/第2章-一切都是对象.md)
     * [第3章 操作符](java/thinking-in-java/第3章-操作符.md)
     * [第5章 初始化与清理](java/thinking-in-java/第5章-初始化与清理.md)
+    * [第6章 访问权限控制](java/thinking-in-java/第6章-访问权限控制.md)
 * [gradle](java/gradle)
     * [第一次使用idea导入gradle工程很慢](java/gradle/第一次使用idea导入gradle工程很慢.md)
 
