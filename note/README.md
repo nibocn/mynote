@@ -32,6 +32,7 @@
 
 ## [cygwin](cygwin)
 * [cygwin-git私钥访问权限问题0755](cygwin/cygwin-git私钥访问权限问题0755.md)
+* [cygwin安装及基础配置](cygwin/cygwin安装及基础配置.md)
 
 ## [sublime](sublime)
 * [sublime快捷键](sublime/sublime快捷键.md)
