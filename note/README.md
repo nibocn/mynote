@@ -9,6 +9,9 @@
 * [gradle](java/gradle)
     * [第一次使用idea导入gradle工程很慢](java/gradle/第一次使用idea导入gradle工程很慢.md)
 
+## [android](android)
+* [android编程权威指南笔记](android/android编程权威指南.md)
+
 ## [python](python)
 * [廖雪峰的python教程学习笔记](python/廖雪峰的python教程学习笔记.md)
 
