@@ -77,3 +77,14 @@
 ## 第17章 存储与加载本地文件
 * Android设备上的所有应用都有一个放置在沙盒中的文件目录。每个应用的沙盒目录都是设备/data/data目录的子目录，且默认以应用包命名。例如，
 CriminalIntent应用的沙盒目录全路径为： /data/data/com.bignerdranch.android.criminalintent。
+* Context类提供的基本文件或目录处理方法
+
+| 方法  | 使用目的
+| ---- | ------- |
+| File getFilesDir() | 获取/data/data/<packagename>/files目录
+| FileInputStream openFileInput(String name) | 打开现有文件进行读取
+| FileOutputStream openFileOutput(String name, int mode) | 打开文件进行写入，如不存在就创建它
+| File getDir(String name, int mode) | 获取/data/data/<packagename>/目录的子目录（如不存在就先创建它）
+| String[] fileList() | 获取/data/data/<packagename>/files目录下的文件列表。可与其他方法配合使用，例如openFileInput(String)
+| File getCacheDir() | 获取/data/data/<packagename>/cache目录。应注意及时清理该目录，并节约使用空间
+*注意，表中大多数方法返回了标准Java类实例，如java.io.File*
