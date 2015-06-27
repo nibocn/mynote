@@ -1,4 +1,7 @@
 # cygwin基础配置
+
+@(Cygwin)[note|cygwin|cygwin配置]
+
 ## 安装Cygwin
 * 下载地址：https://cygwin.com/install.html **根据自己的操作系统情况选择x86(32位)或x86_64(64位)。**
 * 默认从网络安装，点击下一步
@@ -52,42 +55,48 @@
 > 安装完了zsh后，再配合oh-my-zsh使用，那酸爽，用过就停不下来。
 
 * 打开Cygwin从github上clone oh-my-zsh（前提请先在Cygwin中安装git）
-```
-➜ /home/nibo » cd  #切换到home目录
-➜ /home/nibo » git clone git://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh   # clone oh-my-zsh到.oh-my-zsh
-```
+  ```
+    ➜ /home/nibo » cd  #切换到home目录
+    ➜ /home/nibo » git clone git://github.com/robbyrussell/oh-my-zsh.git .oh-my-zsh   # clone oh-my-zsh到.oh-my-zsh
+  ```
+
 * 配置oh-my-zsh
-```
-➜ /home/nibo » cp .oh-my-zsh/templates/zshrc.zsh-template .zshrc    # 拷贝默认的配置文件到home目录名称为.zshrc
-```
+  ```
+    ➜ /home/nibo » cp .oh-my-zsh/templates/zshrc.zsh-template .zshrc    # 拷贝默认的配置文件到home目录名称为.zshrc
+  ```
+
 * .zshrc文件和我们通常使用的.bashrc文件作用是一样的。一个是zsh shell的配置，一个是bash shell的配置。oh-my-zsh默认的zshrc配置文件基本不用修改就可以正常使用。其中几个重要的属性说明下：
-```
-export ZSH=$HOME/.oh-my-zsh    # oh-my-zsh的根目录，如果是按上面的操作步骤，可不用修改。
-ZSH_THEME="robbyrussell"       # oh-my-zsh主题，在$HOME/.oh-my-zsh/themes下可查看更多主题。
-plugins=(git)                  # oh-my-zsh插件，默认只有git。在$HOME/.oh-my-zsh/plugins下可查看更多已存在的插件。查看$HOME/.oh-my-zsh/plugins/git/git.plugin.zsh文件可查看已经定义的很多git快捷操作
-```
+  ```
+    export ZSH=$HOME/.oh-my-zsh    # oh-my-zsh的根目录，如果是按上面的操作步骤，可不用修改。
+    ZSH_THEME="robbyrussell"       # oh-my-zsh主题，在$HOME/.oh-my-zsh/themes下可查看更多主题。
+    plugins=(git)                  # oh-my-zsh插件，默认只有git。在$HOME/.oh-my-zsh/plugins下可查看更多已存在的插件。查看$HOME/.oh-my-zsh/plugins/git/git.plugin.zsh文件可查看已经定义的很多git快捷操作
+  ```
+
 * 关闭Cygwin并重新打开，测试oh-my-zsh配置是否成功。如果象刚才所说在oh-my-zsh中启用了git插件，则在一个git目录下执行`gst`命令能查看到工作空间状态，这是一个缩写的命令实际为`git status`
-```
-➜ /cygdrive/e/Workspace/AndroidStudioProjects/Big-Nerd-Ranch-Android (master) » gst
-On branch master
-Your branch is up-to-date with 'origin/master'.
-nothing to commit, working directory clean
-```
+  ```
+    ➜ /cygdrive/e/Workspace/AndroidStudioProjects/Big-Nerd-Ranch-Android (master) » gst
+    On branch master
+    Your branch is up-to-date with 'origin/master'.
+    nothing to commit, working directory clean
+  ```
 
 #### 安装autojump
 > autojump会记住已经访问过的目录，再次访问时可通过命令`j xxx`快速跳转。下面来安装autojump
 
 * 安装autojump，从github上clone
-```
-➜ /home/nibo » git clone git clone git://github.com/joelthelion/autojump.git .autojump-src      # clone源代码
-➜ /home/nibo » cd .autojump-src
-➜ /home/nibo/.autojump-src (master) » python ./install.py       # 安装autojump
-```
+  ```
+    # clone源代码
+    ➜ /home/nibo » git clone git clone git://github.com/joelthelion/autojump.git .autojump-src
+    ➜ /home/nibo » cd .autojump-src
+    ➜ /home/nibo/.autojump-src (master) » python ./install.py       # 安装autojump
+  ```
+
 * 配置autojump，在$HOME/.zshrc文件中添加如下配置
-```
- # autojump配置
- [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
- ```
+  ```
+    # autojump配置
+    [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && source ~/.autojump/etc/profile.d/autojump.sh
+  ```
+
 * 配置完成后关闭Cygwin重新打开，执行`j -s`命令看否成功。或者随便访问一个目录，然后通过`j xxx`看是否能直接跳转。
 ![](http://img.hb.aicdn.com/46317f0ec70285dba5843890cc5df21cf75b99e59e592-C8R8lF)
 
@@ -95,40 +104,44 @@ nothing to commit, working directory clean
 > 我们可能会碰到当我在Cygwin的命令行操作时，偶尔会需要快速打开当前目录的文件资源管理器。下面通过两个小脚本来实现这一功能。
 
 * 下载脚本
-```
-➜ /home/nibo » git clone git@github.com:nibome/cygwin-script.git script
-```
+  ```
+    ➜ /home/nibo » git clone git@github.com:nibome/cygwin-script.git script
+  ```
+
 * 在.zshrc文件中配置
-```
-# 在cygwin中打开当前所有的目录
-alias xpl='~/script/xpl.sh'
-alias xpf='~/script/xpf.sh'
-```
+  ```
+    # 在cygwin中打开当前所有的目录
+    alias xpl='~/script/xpl.sh'
+    alias xpf='~/script/xpf.sh'
+  ```
+
 * 关闭Cygwin重新打开
 
 #### 注册右键菜单
 > 通过将Cygwin注册到右键菜单中，我们可以在浏览文件时更快速的在当前位置启动Cygwin。
 
-* 新建文件`cygwin.reg`，并复制如下代码，并保存，**注意，Cygwin的安装路径请以自己的系统为准**：
+* 新建文件`cygwin.reg`，并复制如下代码，并保存，**注意，Cygwin的安装路径请以自己的系统为准**
   ```
-  Windows Registry Editor Version 5.00
+    Windows Registry Editor Version 5.00
 
-  [HKEY_CLASSES_ROOT\Directory\Background\shell\Open Cygwin]
-  "Icon"="D:\\Software\\cygwin64\\Cygwin.ico"
+    [HKEY_CLASSES_ROOT\Directory\Background\shell\Open Cygwin]
+    "Icon"="D:\\Software\\cygwin64\\Cygwin.ico"
 
-  [HKEY_CLASSES_ROOT\Directory\Background\shell\Open Cygwin\Command]
-  @="D:\\Software\\cygwin64\\bin\\mintty.exe -i /Cygwin-Terminal.ico /bin/env _T=%V /bin/zsh -l"
+    [HKEY_CLASSES_ROOT\Directory\Background\shell\Open Cygwin\Command]
+    @="D:\\Software\\cygwin64\\bin\\mintty.exe -i /Cygwin-Terminal.ico /bin/env _T=%V /bin/zsh -l"
   ```
-* 双击文件执行，添加注册表
+
+* 双击文件执行，添加注册表。
 * 在Cygwin的`$HOME/.zshrc`文件中添加如下代码：
-```
-# window 右键菜单时用cygwin打开目录所在的路径位置
-_T=${_T//\\//} #将所有的'\'替换为'/'
-if [[ $_T == "" ]]; then
-    _T=${HOME}
-fi
-cd "${_T}"
-```
+  ```
+    # window 右键菜单时用cygwin打开目录所在的路径位置
+    _T=${_T//\\//} #将所有的'\'替换为'/'
+    if [[ $_T == "" ]]; then
+        _T=${HOME}
+    fi
+    cd "${_T}"
+  ```
+
 * 完成后即可通过鼠标右键在当前目录快速打开Cygwin。
 
 **至此Cygwin的一些常用配置就基本完成了！**
