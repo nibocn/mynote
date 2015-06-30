@@ -1,4 +1,7 @@
 # android编程权威指南
+
+@(Android)[note|android]
+
 ## 第3章 Activity的生命周期
 * 停止(onStop)的activity能够存在多久，谁也无法保证。如果系统需要回收内存，它将首先销毁那些停止的activity。
 
