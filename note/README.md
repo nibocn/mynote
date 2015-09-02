@@ -18,6 +18,8 @@
 ## [mysql](mysql)
 * [remote access mysql](mysql/remote-access-mysql.md)
 * [mysql数据库备份及恢复](mysql/mysql数据库备份及恢复.md)
+* [MySql Can't connect to MySQL server on 'localhost' (10038) 错误解决方法](mysql/MySql Can't connect to MySQL server on 'localhost' \(10038\) 错误解决方法.md)
+* [MySql Cannot allocate memory for the buffer pool 错误解决方法](mysql/MySql Cannot allocate memory for the buffer pool 错误解决方法.md)
 
 ## [mongodb](mongodb)
 * [mongodb基本配置](mongodb/mongodb基本配置.md)
@@ -50,6 +52,7 @@
     * [LifeKeeper双机软件自启动tomcat问题](linux/centos/LifeKeeper双机软件自启动tomcat问题.md)
 * [ubuntu](linux/ubuntu)
     * [ubuntu添加字体](linux/ubuntu/ubuntu添加字体.md)
+* [Linux下创建Swap空间](linux/Linux创建Swap空间.md)
 
 ## [less](less)
 * [less学习笔记](less/less学习笔记.md)
