@@ -16,3 +16,4 @@
 * [gradle](note/gradle)
 * [markdown](note/markdown)
 * [uml](note/uml)
+* [mactype](note/mactype)

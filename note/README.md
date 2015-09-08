@@ -69,3 +69,6 @@
 
 ## [uml](uml)
 * [PlantUML常用参数](uml/PlantUML常用参数.md)
+
+## [mactype](mactype)
+* [mactype在中chrome无法渲染和吞字问题的解决](mactype/mactype在中chrome无法渲染和吞字问题的解决.md)
