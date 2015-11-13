@@ -6,6 +6,7 @@ git add .       # 添加修改过和添加的文件（change|add）到暂存区�
 git add -A .    # 添加修改过和删除过的文件（change|delete）到暂存区。
 git add --all . # 添加所有文件（change|delete|add）到暂存区。
 ```
+
 ## Git远程仓库管理
 ```
 git push -u origin master       # 客户端首次push
@@ -15,6 +16,7 @@ git push -u origin master -f    # 强制提交本地的代码到远程仓库。(
 git branch --set-upstream master origin/master
 git branch --set-upstream develop origin/develop
 ```
+
 ## 查看文件diff
 ```
 git diff <file>                 # 比较当前文件和暂存区文件差异
@@ -33,3 +35,6 @@ git cherry-pick -n <$id>        # 合并指定提交到当前分支，但是不�
 
 git count-objects -v            # 查看使用了多少空间，size-pack 是以kb为单位表示的 packfiles 的大小
 ```
+
+## 查看配置
+* `git config [--global|--system] --list` 查看用户配置信息。
